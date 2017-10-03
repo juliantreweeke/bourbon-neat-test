@@ -34,4 +34,22 @@ body {
   .nav a:hover {
     background-color: black; }
 
+.main {
+  background-color: blue;
+  height: 50vh;
+  width: 100%;
+  padding-left: 5vw; }
+  .main h1 {
+    font-size: 2.7em; }
+
+.secondary {
+  width: 100%;
+  height: 230px;
+  background-color: green; }
+
+.footer {
+  height: 2vh;
+  width: 100%;
+  background-color: black; }
+
 /*# sourceMappingURL=output.css.map */
