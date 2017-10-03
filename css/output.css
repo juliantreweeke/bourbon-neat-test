@@ -35,6 +35,19 @@ body {
     font-size: 13px; }
   .nav a:hover {
     background-color: black; }
+  .nav .burger {
+    display: none; }
+  @media (max-width: 850px) {
+    .nav a, .nav li {
+      display: none; }
+    .nav .burger {
+      display: block;
+      position: absolute;
+      right: 0;
+      padding: 15px;
+      cursor: pointer; }
+    .nav .fa-bars {
+      color: #a9a9a9; } }
 
 .main {
   height: 50vh;

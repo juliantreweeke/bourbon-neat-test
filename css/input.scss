@@ -35,6 +35,10 @@ $column-grid: (
   media: "(max-width: 850px)",
 );
 
+// $nav-grid: (
+//   media: "(max-width:850px )",
+// );
+
 
 .nav {
   @include grid-column(12,$my-default-grid);
@@ -61,7 +65,34 @@ $column-grid: (
     a:hover {
       background-color: black;
     }
+    
+    .burger {
+       display: none;
+    }
+     
+    @include grid-media($my-default-grid){
+      
+    a, li {
+    display: none;
+    }
+
+    .burger {
+    display: block;
+    position: absolute;
+    right:0;
+    padding:15px;
+    cursor: pointer;
+    }
+    
+    // fa-bars is for burger color
+    .fa-bars {
+    color:$font-color2;
+    }
+    
+  }
 };
+
+
 
 .main {
   height:50vh;
