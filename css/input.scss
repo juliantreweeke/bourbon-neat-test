@@ -25,14 +25,14 @@ body {
 $my-default-grid: (
   columns: 12,
   direction: ltr,
-  media: "(min-width: 850px)",
+  media: "(max-width: 850px)",
 );
 
 $column-grid: (
   columns: 3,
   gutter:10vw,
   direction: ltr,
-  media: "(min-width: 850px)",
+  media: "(max-width: 850px)",
 );
 
 
@@ -95,7 +95,13 @@ $column-grid: (
   width:100%;
   height:230px;
   background-color:$main-color;
+  
+  @include grid-media($my-default-grid){
+  height:90vh;
+  }
 }
+
+
 
 .icons {
 
@@ -116,6 +122,10 @@ $column-grid: (
 
  a {
    color:$link-color;
+ }
+ 
+ @include grid-media($column-grid){
+   @include grid-column(3,$column-grid);
  }
 
 }
