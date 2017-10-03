@@ -66,7 +66,7 @@ $column-grid: (
       background-color: black;
     }
     
-    .burger {
+    #burger {
        display: none;
     }
      
@@ -75,8 +75,9 @@ $column-grid: (
     a, li {
     display: none;
     }
+    
 
-    .burger {
+    #burger {
     display: block;
     position: absolute;
     right:0;
@@ -142,6 +143,12 @@ $column-grid: (
     .circle:hover {
       cursor: pointer;
     }
+    
+    .logo {
+      // height: 30em;
+      height: 500px;
+      
+    }
 }
 
 
@@ -171,7 +178,6 @@ $column-grid: (
   position: absolute;
   z-index: -3 !important;
 }
-
 
 
 .icons {

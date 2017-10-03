@@ -35,12 +35,12 @@ body {
     font-size: 13px; }
   .nav a:hover {
     background-color: black; }
-  .nav .burger {
+  .nav #burger {
     display: none; }
   @media (max-width: 850px) {
     .nav a, .nav li {
       display: none; }
-    .nav .burger {
+    .nav #burger {
       display: block;
       position: absolute;
       right: 0;
@@ -82,6 +82,8 @@ body {
     margin-left: 4px; }
   .main .circle:hover {
     cursor: pointer; }
+  .main .logo {
+    height: 500px; }
 
 .secondary {
   width: 100%;
