@@ -1,0 +1,135 @@
+body {
+  background-color: white;
+}
+
+
+nav a {
+  /*position: fixed;*/
+  text-decoration: none;
+  color:#707071;
+  /*float:right;*/
+  padding:20px;
+  top:40px;
+  border-top: 40px;
+  font-size: 13px;
+  font-family: helvetica;
+  position: relative;
+  /*position:absolute;*/
+  left:40%;
+}
+
+nav a:hover {
+  background-color: black;
+}
+
+.headline {
+  /*font-family: helvetica;*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  /*font-weight: 300;*/
+  /*color:#707071;*/
+  float:left;
+  position: absolute;
+  top:15%;
+  left:12%;
+}
+
+.headline h1 {
+  /*color:#212733;*/
+  /*color:#878787;*/
+  color:#969696;
+  font-size: 55px;
+
+  font-weight: 100;
+  /*width:700px;*/
+  width:60%;
+}
+
+.headline h4 {
+  font-size: 20px;
+  color:#a9a9a9;
+}
+
+.headline h1, h4 {
+  padding:8px;
+  margin:0px;
+}
+
+
+
+.blue-block {
+  background-color:#0b4e70;
+  width:100%;
+  height:20%;
+  display: block;
+  position: absolute;
+  top:70%;
+}
+
+.blue-skew {
+  background-color:#0b4e70;
+  width:100%;
+  height:25%;
+  display: block;
+  position: absolute;
+  top:55%;
+  transform: skewY(+6deg);
+}
+
+.black-rect {
+  background-color:black;
+  width:100%;
+  height:3%;
+  display: block;
+  position: absolute;
+  top:90%;
+}
+
+.icons img {
+  position: absolute;
+  top:70%;
+  width:50px;
+  height:40px;
+  /*width:1%;
+  height:1%;*/
+}
+
+.consult {
+  left:20%;
+}
+
+.implement {
+  left:50%;
+}
+
+.manage {
+  left:70%;
+}
+
+.dots {
+  position: absolute;
+  top:40%;
+  left:50%;
+}
+
+
+
+.unselected {
+  background: #cecece;
+  /*border-radius: 50%;
+  height: 0.9em;
+  width: 0.9em;*/
+}
+
+.selected {
+  background: #0b4e70;
+
+  /*border-radius: 50%;
+  height: 0.9em;
+  width: 0.9em;*/
+}
+
+.circle {
+  border-radius: 50%;
+  height: 0.9em;
+  width: 0.9em;
+}

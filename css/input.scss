@@ -1,0 +1,18 @@
+@import "libraries/bourbon/bourbon.scss";
+@import "libraries/neat/neat.scss";
+
+$font-color1:#969696;
+$font-color2:#a9a9a9;
+$font-color3:white;
+$link-color:#75c372;
+$main-color:#0b4e70;
+$font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+body {
+  font-family: $font-family;
+  width:100vw;
+  height:100vh;
+  margin: 0;
+  padding:0;
+}
+
