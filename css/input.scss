@@ -10,8 +10,8 @@ $font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
 
 body {
   font-family: $font-family;
-  width:100vw;
-  height:100vh;
+  width:100%;
+  height:100%;
   margin: 0;
   padding:0;
 }
@@ -25,7 +25,7 @@ body {
 $my-default-grid: (
   columns: 12,
   direction: ltr,
-  media: "(max-width: 850px)",
+  media: "(max-width: 1100px)",
 );
 
 $column-grid: (
@@ -33,6 +33,12 @@ $column-grid: (
   gutter:10vw,
   direction: ltr,
   media: "(max-width: 850px)",
+);
+
+$medium-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (min-width: 275px) and (max-width: 850px)",
 );
 
 // $nav-grid: (
@@ -49,7 +55,7 @@ $column-grid: (
   padding-left:150px;;
   text-align:center;
     
-    .toplinks {
+    #toplinks {
       display: block;
     }
     
@@ -75,9 +81,9 @@ $column-grid: (
        display: none;
     }
      
-    @include grid-media($my-default-grid){
+    @include grid-media($medium-grid){
       
-    .toplinks {
+    #toplinks {
     display: none;
     }
     
@@ -157,8 +163,34 @@ $column-grid: (
       position: absolute;
       right:0%;
       top:13%;
-      
     }
+    
+    // responsive bourbon queries
+    
+    @include grid-media($my-default-grid){
+    // @include grid-column(6,$my-default-grid);
+    h1 {
+     font-size: 2.2em;
+    }
+    h4 {
+      width:350px;
+    }
+    height:60vh;
+    }
+    
+    @include grid-media($medium-grid){
+  //  @include grid-column(12,$my-default-grid);
+    h1 {
+      font-size: 2em;
+    }
+    h4 {
+      font-size: 15px !important;
+      width:200px;
+    }
+    height:65vh;
+    padding-left:5vw;
+    }
+    
 }
 
 
@@ -174,7 +206,7 @@ $column-grid: (
   height:230px;
   background-color:$main-color;
   
-  @include grid-media($my-default-grid){
+  @include grid-media($medium-grid){
   height:90vh;
   }
 }
@@ -234,5 +266,10 @@ $column-grid: (
   height:2vh;
   width:100%;
   background-color:black;
+}
+
+// nav draw clas
+.show {
+  display: block !important;
 }
 

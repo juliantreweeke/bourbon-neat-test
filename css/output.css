@@ -1,7 +1,7 @@
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0; }
 
@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding-left: 150px;
   text-align: center; }
-  .nav .toplinks {
+  .nav #toplinks {
     display: block; }
   .nav li {
     display: inline;
@@ -39,8 +39,8 @@ body {
     background-color: black; }
   .nav #burger {
     display: none; }
-  @media (max-width: 850px) {
-    .nav .toplinks {
+  @media screen and (min-width: 275px) and (max-width: 850px) {
+    .nav #toplinks {
       display: none; }
     .nav #burger {
       display: block;
@@ -91,12 +91,28 @@ body {
     position: absolute;
     right: 0%;
     top: 13%; }
+  @media (max-width: 1100px) {
+    .main {
+      height: 60vh; }
+      .main h1 {
+        font-size: 2.2em; }
+      .main h4 {
+        width: 350px; } }
+  @media screen and (min-width: 275px) and (max-width: 850px) {
+    .main {
+      height: 65vh;
+      padding-left: 5vw; }
+      .main h1 {
+        font-size: 2em; }
+      .main h4 {
+        font-size: 15px !important;
+        width: 200px; } }
 
 .secondary {
   width: 100%;
   height: 230px;
   background-color: #0b4e70; }
-  @media (max-width: 850px) {
+  @media screen and (min-width: 275px) and (max-width: 850px) {
     .secondary {
       height: 90vh; } }
 
@@ -134,5 +150,8 @@ body {
   height: 2vh;
   width: 100%;
   background-color: black; }
+
+.show {
+  display: block !important; }
 
 /*# sourceMappingURL=output.css.map */
