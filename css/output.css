@@ -5,21 +5,23 @@ body {
   margin: 0;
   padding: 0; }
 
-.container::after {
-  clear: both;
-  content: "";
-  display: block; }
+.container {
+  width: 100vw;
+  height: 100vh; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 .nav {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
   float: left;
-  background-color: red;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
-  padding: 0;
+  padding-left: 150px;
   text-align: center; }
   .nav li {
     display: inline;
@@ -35,17 +37,41 @@ body {
     background-color: black; }
 
 .main {
-  background-color: blue;
   height: 50vh;
-  width: 100%;
+  width: 100vh;
   padding-left: 5vw; }
   .main h1 {
-    font-size: 2.7em; }
+    font-size: 2.7em;
+    color: #969696;
+    font-weight: 100;
+    width: 60vw; }
+  .main h4 {
+    font-size: 20px;
+    color: #a9a9a9; }
+  .main h1, .main h4 {
+    padding: 8px;
+    margin: 0px; }
 
 .secondary {
   width: 100%;
   height: 230px;
-  background-color: green; }
+  background-color: #0b4e70; }
+
+.icons {
+  display: inline;
+  text-align: center;
+  width: calc(33.3333333333% - 13.3333333333vw);
+  float: left;
+  margin-left: 10vw;
+  height: 30vh; }
+  .icons img {
+    width: 7vh;
+    height: 5vh;
+    margin-top: 15px; }
+  .icons p {
+    color: white; }
+  .icons a {
+    color: #75c372; }
 
 .footer {
   height: 2vh;

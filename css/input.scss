@@ -18,6 +18,8 @@ body {
 
 .container {
   @include grid-container;
+  width:100vw;
+  height:100vh;
 }
 
 $my-default-grid: (
@@ -37,11 +39,10 @@ $column-grid: (
 .nav {
   @include grid-column(12,$my-default-grid);
   float:left;
-  background-color: red;
   height:10vh;
-  width:100%;
+  width:100vw;
   margin:0;
-  padding:0;
+  padding-left:150px;;
   text-align:center;
     li {
       display:inline;
@@ -63,23 +64,78 @@ $column-grid: (
 };
 
 .main {
-  background-color: blue;
   height:50vh;
-  width:100%;
+  width:100vh;
      h1 {
        font-size: 2.7em;
+       color:$font-color1;
+       font-weight: 100;
+       width:60vw;
+     }
+     h4 {
+       font-size: 20px;
+       color:$font-color2;
+     }
+     h1, h4 {
+       padding:8px;
+       margin:0px;
      }
      padding-left:5vw;
 }
 
+
+
+
+
+
+
+
+
 .secondary {
   width:100%;
   height:230px;
-  background-color: green;
+  background-color:$main-color;
 }
+
+.icons {
+
+  display: inline;
+  text-align: center;
+  @include grid-column(1,$column-grid);
+  height:30vh;
+
+ img {
+   width:7vh;
+   height:5vh;
+   margin-top:15px;
+ }
+
+ p {
+   color:$font-color3;
+ }
+
+ a {
+   color:$link-color;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   height:2vh;
   width:100%;
   background-color:black;
 }
+
