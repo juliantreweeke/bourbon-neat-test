@@ -16,3 +16,48 @@ body {
   padding:0;
 }
 
+.container {
+  @include grid-container;
+}
+
+$my-default-grid: (
+  columns: 12,
+  direction: ltr,
+  media: "(min-width: 850px)",
+);
+
+$column-grid: (
+  columns: 3,
+  gutter:10vw,
+  direction: ltr,
+  media: "(min-width: 850px)",
+);
+
+
+.nav {
+  @include grid-column(12,$my-default-grid);
+  float:left;
+  background-color: red;
+  height:10vh;
+  width:100%;
+  margin:0;
+  padding:0;
+  text-align:center;
+    li {
+      display:inline;
+      list-style:none;
+    }
+
+    a {
+      display:inline-block;
+      padding:15px;
+      margin-top: 20px;
+      text-decoration:none;
+      color:$font-color2;
+      font-size: 13px;
+    }
+    
+    a:hover {
+      background-color: black;
+    }
+};

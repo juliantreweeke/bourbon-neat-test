@@ -5,4 +5,33 @@ body {
   margin: 0;
   padding: 0; }
 
+.container::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.nav {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  float: left;
+  background-color: red;
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .nav li {
+    display: inline;
+    list-style: none; }
+  .nav a {
+    display: inline-block;
+    padding: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #a9a9a9;
+    font-size: 13px; }
+  .nav a:hover {
+    background-color: black; }
+
 /*# sourceMappingURL=output.css.map */
