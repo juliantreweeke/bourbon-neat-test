@@ -50,7 +50,7 @@ body {
       color: #a9a9a9; } }
 
 .main {
-  height: 50vh;
+  height: 60vh;
   width: 100vh;
   padding-left: 5vw; }
   .main h1 {
@@ -64,6 +64,24 @@ body {
   .main h1, .main h4 {
     padding: 8px;
     margin: 0px; }
+  .main .dots {
+    position: absolute;
+    display: flex;
+    margin-left: 40vw; }
+  .main .dots > div {
+    flex: 1; }
+  .main .unselected {
+    background: #cecece; }
+  .main .selected {
+    background: #0b4e70; }
+  .main .circle {
+    border-radius: 50%;
+    height: 0.8em;
+    width: 0.8em;
+    margin-top: 30px;
+    margin-left: 4px; }
+  .main .circle:hover {
+    cursor: pointer; }
 
 .secondary {
   width: 100%;
@@ -72,6 +90,14 @@ body {
   @media (max-width: 850px) {
     .secondary {
       height: 90vh; } }
+
+.skew {
+  height: 22vh;
+  background-color: #0b4e70;
+  transform-origin: top right;
+  transform: skewY(4deg);
+  position: absolute;
+  z-index: -3 !important; }
 
 .icons {
   display: inline;

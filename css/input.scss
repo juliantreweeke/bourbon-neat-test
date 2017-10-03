@@ -95,7 +95,7 @@ $column-grid: (
 
 
 .main {
-  height:50vh;
+  height:60vh;
   width:100vh;
      h1 {
        font-size: 2.7em;
@@ -112,6 +112,36 @@ $column-grid: (
        margin:0px;
      }
      padding-left:5vw;
+     
+    .dots {
+      position: absolute;
+      display: flex;
+      margin-left: 40vw;
+    }
+
+    .dots > div {
+      flex: 1;
+    }
+
+    .unselected {
+      background: #cecece;
+    }
+
+    .selected {
+      background: $main-color;
+    }
+
+    .circle {
+      border-radius: 50%;
+      height: 0.8em;
+      width: 0.8em;
+      margin-top: 30px;
+      margin-left: 4px;
+    }
+
+    .circle:hover {
+      cursor: pointer;
+    }
 }
 
 
@@ -130,6 +160,16 @@ $column-grid: (
   @include grid-media($my-default-grid){
   height:90vh;
   }
+}
+
+.skew {
+  // width:100%;
+  height:22vh;
+  background-color:$main-color;
+  transform-origin: top right ;
+  transform: skewY(+4deg);
+  position: absolute;
+  z-index: -3 !important;
 }
 
 
