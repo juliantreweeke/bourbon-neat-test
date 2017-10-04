@@ -95,6 +95,7 @@ $phone-landscape: (
     
 
     #burger {
+    z-index: 3;
     display: block;
     position: absolute;
     right:0;
@@ -298,6 +299,41 @@ $phone-landscape: (
 
 // nav draw clas
 .show {
+  z-index:1;
   display: block !important;
-}
+
+  background-color:$font-color1;
+  height:450px;
+  width: 100%;
+  position: absolute;
+  top:0px;
+  right:0px;
+  padding: 0px;
+  margin:0px;
+  
+    li {
+      display:block;
+      list-style:none;
+    }
+
+    a {
+      padding:10px;
+      margin-top:0px;
+      text-decoration:none;
+      color:$main-color;
+      font-size: 40px;
+    }
+    
+    a:hover {
+      background-color:$font-color1 !important;
+      color:white;
+    }
+    
+    @include grid-media($phone-landscape){
+     height:500px;
+   }
+    
+    
+  
+  }
 

@@ -44,6 +44,7 @@ body {
     .nav #toplinks {
       display: none; }
     .nav #burger {
+      z-index: 3;
       display: block;
       position: absolute;
       right: 0;
@@ -167,6 +168,30 @@ body {
   background-color: black; }
 
 .show {
-  display: block !important; }
+  z-index: 1;
+  display: block !important;
+  background-color: #969696;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0px;
+  margin: 0px; }
+  .show li {
+    display: block;
+    list-style: none; }
+  .show a {
+    padding: 10px;
+    margin-top: 0px;
+    text-decoration: none;
+    color: #0b4e70;
+    font-size: 40px; }
+  .show a:hover {
+    background-color: #969696 !important;
+    color: white; }
+  @media screen and (min-width: 375px) and (max-width: 700px) {
+    .show {
+      height: 500px; } }
 
 /*# sourceMappingURL=output.css.map */

@@ -3,5 +3,14 @@
 
 $("#burger").click(function() {
   $( "#toplinks" ).toggleClass( "show");
-  // $(".toplinks").slideToggle("display");
 });
+
+$( window ).resize(function() {
+  if ($(window).width() > 850) {
+  
+      $( "#toplinks" ).removeClass( "show");
+    } 
+});
+
+
+
