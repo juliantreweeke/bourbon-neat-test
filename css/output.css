@@ -68,9 +68,10 @@ body {
     font-size: 20px;
     color: #a9a9a9;
     width: 550px; }
-  .main h1, .main h4 {
+  .main h1,
+  .main h4 {
     padding: 8px;
-    margin: 0px; }
+    margin: 0; }
   .main .dots {
     position: absolute;
     display: flex;
@@ -101,18 +102,24 @@ body {
       height: 65vh;
       padding-left: 5vw; }
       .main h1 {
-        font-size: 2em; }
+        font-size: 1.8em; }
       .main h4 {
         font-size: 15px !important;
-        width: 200px; } }
-  @media screen and (min-width: 275px) and (max-width: 850px) {
+        width: 200px; }
+      .main .logo {
+        bottom: -12vh; } }
+  @media screen and (min-width: 0px) and (max-width: 750px) {
     .main {
       height: 80vh;
       padding-left: 5vw; }
       .main h1 {
         font-size: 1.5em; }
       .main h4 {
-        font-size: 15px !important; } }
+        font-size: 15px !important; }
+      .main .logo {
+        width: 350px;
+        bottom: -24vh;
+        right: -10%; } }
 
 .secondary {
   width: 100%;
@@ -167,16 +174,16 @@ body {
   height: 450px;
   width: 100%;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  padding: 0px;
+  top: 0;
+  right: 0;
+  padding: 0;
   margin-top: 10px; }
   .show li {
     display: block;
     list-style: none; }
   .show a {
     padding: 10px;
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: none;
     font-size: 40px;
     transition: ease-in-out; }
@@ -191,32 +198,12 @@ body {
         padding: 5px; } }
 
 .logo {
-  height: 30em;
+  height: 105vh;
+  width: 45%;
   z-index: -4;
   transform: rotate(40deg);
   position: absolute;
-  right: 0%;
-  top: 17%; }
-
-@media screen and (max-width: 1200px) {
-  .logo {
-    height: 25em;
-    top: 20%; } }
-@media screen and (max-width: 1100px) {
-  .logo {
-    height: 27em;
-    top: 25%; } }
-@media screen and (max-width: 850px) {
-  .logo {
-    height: 20em;
-    top: 49%; } }
-@media screen and (max-width: 550px) {
-  .logo {
-    height: 15em;
-    top: 60%; } }
-@media screen and (max-width: 350px) {
-  .logo {
-    height: 10em;
-    top: 65%; } }
+  right: -2%;
+  bottom: -4vh; }
 
 /*# sourceMappingURL=output.css.map */
