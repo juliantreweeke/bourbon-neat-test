@@ -14,6 +14,8 @@ body {
   height:100%;
   margin: 0;
   padding:0;
+  overflow-x: hidden;
+
 }
 
 .container {
@@ -40,6 +42,10 @@ $medium-grid: (
   gutter: 20px,
   media: "screen and (min-width: 275px) and (max-width: 850px)",
 );
+
+$phone-landscape: (
+   media: "screen and (min-width: 375px) and (max-width: 700px)",
+ );
 
 // $nav-grid: (
 //   media: "(max-width:850px )",
@@ -118,6 +124,7 @@ $medium-grid: (
      h4 {
        font-size: 20px;
        color:$font-color2;
+       width:550px;
      }
      h1, h4 {
        padding:8px;
@@ -191,6 +198,18 @@ $medium-grid: (
     padding-left:5vw;
     }
     
+    @include grid-media($phone-landscape){
+    h1 {
+       font-size: 1.5em;
+    }
+
+    h4 {
+       font-size: 15px !important;
+    }
+    height:70vh;
+    padding-left:5vw;
+   }
+    
 }
 
 
@@ -206,9 +225,18 @@ $medium-grid: (
   height:230px;
   background-color:$main-color;
   
+  // responsive bourbon queries
+  
   @include grid-media($medium-grid){
   height:90vh;
   }
+  
+  @include grid-media($phone-landscape){
+   height:150vh;
+   .icons {
+     padding-top: 50px;
+   }
+ }
 }
 
 .skew {

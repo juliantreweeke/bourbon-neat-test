@@ -3,7 +3,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 .container {
   width: 100vw;
@@ -62,7 +63,8 @@ body {
     width: 60vw; }
   .main h4 {
     font-size: 20px;
-    color: #a9a9a9; }
+    color: #a9a9a9;
+    width: 550px; }
   .main h1, .main h4 {
     padding: 8px;
     margin: 0px; }
@@ -107,6 +109,14 @@ body {
       .main h4 {
         font-size: 15px !important;
         width: 200px; } }
+  @media screen and (min-width: 375px) and (max-width: 700px) {
+    .main {
+      height: 70vh;
+      padding-left: 5vw; }
+      .main h1 {
+        font-size: 1.5em; }
+      .main h4 {
+        font-size: 15px !important; } }
 
 .secondary {
   width: 100%;
@@ -115,6 +125,11 @@ body {
   @media screen and (min-width: 275px) and (max-width: 850px) {
     .secondary {
       height: 90vh; } }
+  @media screen and (min-width: 375px) and (max-width: 700px) {
+    .secondary {
+      height: 150vh; }
+      .secondary .icons {
+        padding-top: 50px; } }
 
 .skew {
   width: 100%;
