@@ -25,6 +25,13 @@ $( window ).resize(function() {
     //   } 
 });
 
+// Toggle css between the center dot links
+
 $(".circle").click(function() {
-    $(this).toggleClass("selected");
+  if ($(this).hasClass("selected")) {
+    return;
+  }
+  $('.circle').not(this).removeClass('selected');
+  $(this).toggleClass("selected");
 });
+
