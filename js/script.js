@@ -6,23 +6,18 @@ $("#burger").click(function() {
   $(".main-container").fadeToggle();
 });
 
-
-
 $( window ).resize(function() {
   if ($(window).width() > 850) {
+    $( ".main-container" ).fadeIn();
       $( "#toplinks" ).removeClass( "show").fadeIn();
-      $( ".main-container" ).fadeIn();
     }
   
-  // if ($(window).width() === 850){
-  //   $("#toplinks").fadeOut(-10);
-  //   }
-  
+  if ($(window).width() < 850){
+    if (!$("#toplinks").hasClass("show")) {
+      $("#toplinks").css("display", "none");
+    }
+  }
 
-    
-    // if ($(window).width() === 850) {
-    //     $( "#toplinks" ).fadeOut(-10);
-    //   } 
 });
 
 // Toggle css between the center dot links
