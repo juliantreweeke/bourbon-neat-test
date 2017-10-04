@@ -44,7 +44,7 @@ $medium-grid: (
 );
 
 $phone-landscape: (
-   media: "screen and (min-width: 375px) and (max-width: 700px)",
+   media: "screen and (min-width: 375px) and (max-width: 750px)",
  );
 
 // $nav-grid: (
@@ -207,7 +207,7 @@ $phone-landscape: (
     h4 {
        font-size: 15px !important;
     }
-    height:70vh;
+    height:80vh;
     padding-left:5vw;
    }
     
@@ -233,9 +233,9 @@ $phone-landscape: (
   }
   
   @include grid-media($phone-landscape){
-   height:150vh;
+   height:170vh;
    .icons {
-     padding-top: 50px;
+     padding-top: 60px;
    }
  }
 }
@@ -330,7 +330,8 @@ $phone-landscape: (
     }
     
     @include grid-media($phone-landscape){
-     height:500px;
+     height:550px;
+     
    }
     
     
