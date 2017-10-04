@@ -199,7 +199,7 @@ $phone-landscape: (
     padding-left:5vw;
     }
     
-    @include grid-media($phone-landscape){
+    @include grid-media($medium-grid){
     h1 {
        font-size: 1.5em;
     }
@@ -210,6 +210,20 @@ $phone-landscape: (
     height:80vh;
     padding-left:5vw;
    }
+    
+  //   @include grid-media($phone-landscape){
+  //   h1 {
+  //      font-size: 1.5em;
+  //   }
+   // 
+  //   h4 {
+  //      font-size: 15px !important;
+  //   }
+  //   height:80vh;
+  //   padding-left:5vw;
+  //  }
+   
+   
     
 }
 
@@ -302,7 +316,7 @@ $phone-landscape: (
   z-index:1;
   display: block !important;
 
-  background-color:$font-color1;
+  // background-color:$font-color1;
   height:450px;
   width: 100%;
   position: absolute;
@@ -320,13 +334,14 @@ $phone-landscape: (
       padding:10px;
       margin-top:0px;
       text-decoration:none;
-      color:$main-color;
+      // color:$main-color;
       font-size: 40px;
+      transition:  ease-in-out;
     }
     
     a:hover {
-      background-color:$font-color1 !important;
-      color:white;
+      background-color:white !important;
+      color:$link-color;
     }
     
     @include grid-media($phone-landscape){
@@ -334,7 +349,10 @@ $phone-landscape: (
      
    }
     
-    
   
+  }
+  
+  .hide {
+    display: none;
   }
 
