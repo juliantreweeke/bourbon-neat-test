@@ -187,7 +187,8 @@ body {
     .show {
       height: 550px; }
       .show a {
-        font-size: 30px; } }
+        font-size: 25px;
+        padding: 5px; } }
 
 .logo {
   height: 30em;
@@ -195,7 +196,7 @@ body {
   transform: rotate(40deg);
   position: absolute;
   right: 0%;
-  top: 13%; }
+  top: 17%; }
 
 @media screen and (max-width: 1200px) {
   .logo {
