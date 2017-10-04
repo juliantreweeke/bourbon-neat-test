@@ -314,7 +314,7 @@ $phone-landscape: (
 // nav draw clas
 .show {
   z-index:1;
-  display: block !important;
+  // display: block !important;
 
   // background-color:$font-color1;
   height:450px;
@@ -323,7 +323,7 @@ $phone-landscape: (
   top:0px;
   right:0px;
   padding: 0px;
-  margin:0px;
+  margin-top:30px;
   
     li {
       display:block;
@@ -348,11 +348,15 @@ $phone-landscape: (
      height:550px;
      
    }
-    
-  
   }
   
   .hide {
+    visibility: hidden;
     display: none;
+    opacity: 0;
+  }
+  
+  .main-container {
+  
   }
 

@@ -2,8 +2,11 @@
 // document.getElementById("burger").onclick = function () {alert('onclick');};
 
 $("#burger").click(function() {
-  $( "#toplinks" ).toggleClass( "show");
-  $(".main-container").toggleClass("hide");
+  
+  // $(".main-container").toggleClass("hide");
+  $("#toplinks").fadeToggle().toggleClass( "show");
+  // $( "#toplinks" ).toggleClass( "show");
+  $(".main-container").fadeToggle();
 });
 
 $( window ).resize(function() {

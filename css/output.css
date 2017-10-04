@@ -169,14 +169,13 @@ body {
 
 .show {
   z-index: 1;
-  display: block !important;
   height: 450px;
   width: 100%;
   position: absolute;
   top: 0px;
   right: 0px;
   padding: 0px;
-  margin: 0px; }
+  margin-top: 30px; }
   .show li {
     display: block;
     list-style: none; }
@@ -194,6 +193,8 @@ body {
       height: 550px; } }
 
 .hide {
-  display: none; }
+  visibility: hidden;
+  display: none;
+  opacity: 0; }
 
 /*# sourceMappingURL=output.css.map */
