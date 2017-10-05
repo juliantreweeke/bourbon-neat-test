@@ -167,7 +167,7 @@ body {
         padding-top: 60px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .secondary {
-      height: 150vh; }
+      height: 190vh; }
       .secondary .icons {
         padding-bottom: 60px; } }
   @media (max-width: 500px) {
@@ -243,7 +243,7 @@ body {
       font-size: 25px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .show a {
-      font-size: 15px; } }
+      font-size: 30px; } }
   @media screen and (min-width: 670px) and (max-width: 700px) and (orientation: landscape) {
     .show a {
       font-size: 20px; } }
