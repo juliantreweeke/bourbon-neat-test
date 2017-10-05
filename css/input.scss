@@ -13,6 +13,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   // overflow-x:hidden !important;
 }
 
@@ -31,7 +32,6 @@ body {
   @include grid-container;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 
 }
 
@@ -147,8 +147,8 @@ $iphone-landscape-medium: (
   height: 60vh;
   width: 100vh;
 
-
   .logo {
+    display:block;
     height:105vh;
     width:45%;
     z-index: -4;
@@ -304,7 +304,7 @@ $iphone-landscape-medium: (
 
   }
   @include grid-media($phone-landscape) {
-    height: 170vh;
+    height: 180vh;
 
     .icons {
       padding-top: 60px;
