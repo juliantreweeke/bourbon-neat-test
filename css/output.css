@@ -40,7 +40,7 @@ body {
     background-color: black; }
   .nav #burger {
     display: none; }
-  @media screen and (min-width: 275px) and (max-width: 850px) {
+  @media screen and (min-width: 320px) and (max-width: 850px) {
     .nav #toplinks {
       display: none; }
     .nav .main-container {
@@ -105,7 +105,7 @@ body {
         font-size: 2.2em; }
       .main h4 {
         width: 350px; } }
-  @media screen and (min-width: 275px) and (max-width: 850px) {
+  @media screen and (min-width: 320px) and (max-width: 850px) {
     .main {
       height: 65vh;
       padding-left: 5vw; }
@@ -116,7 +116,7 @@ body {
         width: 200px; }
       .main .logo {
         bottom: -12vh; } }
-  @media screen and (min-width: 0px) and (max-width: 750px) {
+  @media screen and (min-width: 340px) and (max-width: 750px) {
     .main {
       height: 80vh;
       padding-left: 5vw; }
@@ -128,15 +128,23 @@ body {
         width: 350px;
         bottom: -28vh;
         right: -10%; } }
+  @media (max-width: 340px) {
+    .main {
+      height: 90vh;
+      padding-left: 5vw; }
+      .main .logo {
+        width: 250px;
+        bottom: -38vh;
+        right: -10%; } }
 
 .secondary {
   width: 100%;
   height: 230px;
   background-color: #0b4e70; }
-  @media screen and (min-width: 275px) and (max-width: 850px) {
+  @media screen and (min-width: 320px) and (max-width: 850px) {
     .secondary {
       height: 90vh; } }
-  @media screen and (min-width: 0px) and (max-width: 750px) {
+  @media screen and (min-width: 340px) and (max-width: 750px) {
     .secondary {
       height: 170vh; }
       .secondary .icons {
@@ -199,11 +207,14 @@ body {
   .show a:hover {
     background-color: rgba(255, 255, 255, 0) !important;
     color: #75c372; }
-  @media screen and (min-width: 0px) and (max-width: 750px) {
+  @media screen and (min-width: 340px) and (max-width: 750px) {
     .show {
       height: 550px; }
       .show a {
-        font-size: 25px;
+        font-size: 28px;
         padding: 5px; } }
+  @media (max-width: 340px) {
+    .show a {
+      font-size: 35px; } }
 
 /*# sourceMappingURL=output.css.map */

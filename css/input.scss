@@ -38,15 +38,15 @@ $column-grid: (
 $medium-grid: ( 
   columns: 12, 
   gutter: 20px, 
-  media: "screen and (min-width: 275px) and (max-width: 850px)", 
+  media: "screen and (min-width: 320px) and (max-width: 850px)", 
 );
 
 $phone-landscape: ( 
-  media: "screen and (min-width: 0px) and (max-width: 750px)", 
+  media: "screen and (min-width: 340px) and (max-width: 750px)", 
 );
 
-$phone-landscape-small: ( 
-  media: "screen and (min-width: 0px) and (max-width: 700px) and (orientation: landscape)", 
+$phone-small: ( 
+  media: "(max-width: 340px)", 
 );
 
 .nav {
@@ -220,20 +220,13 @@ $phone-landscape-small: (
     }
   }
   
-  @include grid-media($phone-landscape-small) {
-    h1 {
-      font-size: 1.5em;
-    }
-
-    h4 {
-      font-size: 1500px !important;
-    }
-    height: 80vh;
+  @include grid-media($phone-small) {
+    height: 90vh;
     padding-left: 5vw;
     
     .logo {
-      width:150px;
-      bottom: -28vh;
+      width:250px;
+      bottom: -38vh;
       right:-10%;
     }
   }
@@ -331,8 +324,15 @@ $phone-landscape-small: (
     height: 550px;
 
     a {
-      font-size: 25px;
+      font-size: 28px;
       padding: 5px;
+    }
+  }
+  
+  @include grid-media($phone-small) {
+    a {
+      font-size: 35px;
+      
     }
   }
 }
