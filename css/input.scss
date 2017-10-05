@@ -271,6 +271,11 @@ $iphone-landscape-medium: (
   // responsive bourbon queries
   @include grid-media($medium-grid) {
     height: 90vh;
+    
+    .icons {
+      padding-top: 0px;
+    }
+    
   }
   @include grid-media($phone-landscape) {
     height: 170vh;
