@@ -13,13 +13,16 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x:hidden;
+
   // overflow-x: hidden;
   // overflow-y: hidden;
   // overflow:hidden;
 }
 
 // .logo-container {
-//   overflow-x: hidden;
+//   //
+//   // position: absolute;
 // }
 
 .container {
@@ -140,6 +143,7 @@ $iphone-landscape-medium: (
   height: 60vh;
   width: 100vh;
 
+
   .logo {
     height:105vh;
     width:45%;
@@ -147,7 +151,7 @@ $iphone-landscape-medium: (
     transform: rotate(40deg);
     position: absolute;
     right: -2%;
-    bottom: -4vh;
+    bottom: -9vh;
     // overflow: hidden;
   }
 
@@ -225,7 +229,7 @@ $iphone-landscape-medium: (
     }
 
     .logo {
-      bottom: -12vh;
+      bottom: -15vh;
     }
 
     height: 65vh;
@@ -245,7 +249,7 @@ $iphone-landscape-medium: (
 
     .logo {
       width:350px;
-      bottom: -28vh;
+      bottom: -30vh;
       right:-10%;
     }
   }
@@ -260,7 +264,7 @@ $iphone-landscape-medium: (
 
     .logo {
       width:250px;
-      bottom: -38vh;
+      bottom: -43vh;
       right:-10%;
     }
   }
@@ -270,7 +274,7 @@ $iphone-landscape-medium: (
 
     .logo {
       width:300px;
-      bottom: -38vh;
+      bottom: -40vh;
       right:-10%;
     }
   }
