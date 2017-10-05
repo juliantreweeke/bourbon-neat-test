@@ -116,7 +116,7 @@ body {
         width: 200px; }
       .main .logo {
         bottom: -12vh; } }
-  @media screen and (min-width: 340px) and (max-width: 750px) {
+  @media screen and (min-width: 640px) and (max-width: 750px) {
     .main {
       height: 80vh;
       padding-left: 5vw; }
@@ -136,9 +136,13 @@ body {
         width: 250px;
         bottom: -38vh;
         right: -10%; } }
-  @media screen and (min-width: 460px) and (max-width: 670px) and (orientation landscape) {
+  @media screen and (max-width: 640px) and (orientation: landscape) {
     .main {
-      height: 200vh; } }
+      height: 90vh; }
+      .main .logo {
+        width: 300px;
+        bottom: -38vh;
+        right: -10%; } }
 
 .secondary {
   width: 100%;
@@ -147,11 +151,16 @@ body {
   @media screen and (min-width: 320px) and (max-width: 850px) {
     .secondary {
       height: 90vh; } }
-  @media screen and (min-width: 340px) and (max-width: 750px) {
+  @media screen and (min-width: 640px) and (max-width: 750px) {
     .secondary {
       height: 170vh; }
       .secondary .icons {
         padding-top: 60px; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    .secondary {
+      height: 150vh; }
+      .secondary .icons {
+        padding-bottom: 60px; } }
 
 .skew {
   width: 100%;
@@ -210,7 +219,7 @@ body {
   .show a:hover {
     background-color: rgba(255, 255, 255, 0) !important;
     color: #75c372; }
-  @media screen and (min-width: 340px) and (max-width: 750px) {
+  @media screen and (min-width: 640px) and (max-width: 750px) {
     .show {
       height: 550px; }
       .show a {
@@ -219,5 +228,8 @@ body {
   @media (max-width: 340px) {
     .show a {
       font-size: 35px; } }
+  @media screen and (max-width: 640px) and (orientation: landscape) {
+    .show a {
+      font-size: 15px; } }
 
 /*# sourceMappingURL=output.css.map */

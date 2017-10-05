@@ -41,8 +41,12 @@ $medium-grid: (
   media: "screen and (min-width: 320px) and (max-width: 850px)", 
 );
 
+// $phone-landscape: ( 
+//   media: "screen and (min-width: 340px) and (max-width: 750px)", 
+// );
+
 $phone-landscape: ( 
-  media: "screen and (min-width: 340px) and (max-width: 750px)", 
+  media: "screen and (min-width: 640px) and (max-width: 750px)", 
 );
 
 $phone-small: ( 
@@ -50,7 +54,7 @@ $phone-small: (
 );
 
 $iphone-landscape: (
-  media:"screen and (min-width: 460px) and (max-width: 670px) and (orientation landscape)"
+  media:"screen and (max-width: 640px) and (orientation: landscape)"
 );
 
 .nav {
@@ -236,12 +240,20 @@ $iphone-landscape: (
   }
   
   @include grid-media($iphone-landscape) {
-    height: 200vh;
+    height: 90vh;
+    
+    .logo {
+      width:300px;
+      bottom: -38vh;
+      right:-10%;
+    }
   }
   
   
 
 }
+
+// blue div section
 
 .secondary {
   width: 100%;
@@ -257,6 +269,15 @@ $iphone-landscape: (
     .icons {
       padding-top: 60px;
     }
+  }
+  
+  @include grid-media($iphone-landscape) {
+    height: 150vh;
+    
+    .icons {
+      padding-bottom: 60px;
+    }
+    
   }
 }
 
@@ -340,7 +361,12 @@ $iphone-landscape: (
   @include grid-media($phone-small) {
     a {
       font-size: 35px;
-      
+    }
+  }
+  
+  @include grid-media($iphone-landscape) {
+    a {
+      font-size: 15px;
     }
   }
 }
