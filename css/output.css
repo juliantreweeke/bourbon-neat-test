@@ -35,6 +35,7 @@ body {
     list-style: none; }
   .nav a {
     display: inline-block;
+    margin-top: -30px;
     padding: 20px;
     text-decoration: none;
     color: #212733;
@@ -60,7 +61,7 @@ body {
       color: #a9a9a9; } }
 
 .main {
-  margin-top: 10px;
+  margin-top: 30px;
   height: 60vh;
   width: 100vh;
   padding-left: 5vw; }
@@ -100,7 +101,7 @@ body {
     border-radius: 50%;
     height: 0.8em;
     width: 0.8em;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-left: 4px; }
   .main .circle:hover {
     cursor: pointer; }
@@ -173,7 +174,7 @@ body {
         padding-bottom: 60px; } }
   @media (max-width: 500px) {
     .secondary {
-      height: 120vh; }
+      height: 140vh; }
       .secondary .icons {
         padding-bottom: 70px; } }
 

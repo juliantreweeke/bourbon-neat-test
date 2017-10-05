@@ -93,6 +93,8 @@ $iphone-landscape-medium: (
 
   a {
     display: inline-block;
+    // padding-left:30px;
+    margin-top: -30px;
     padding: 20px;
     // margin-top: 5px;
     text-decoration: none;
@@ -134,7 +136,7 @@ $iphone-landscape-medium: (
 
 .main {
   // @include grid-column(6,$my-default-grid);
-  margin-top: 10px;
+  margin-top: 30px;
   height: 60vh;
   width: 100vh;
 
@@ -191,7 +193,7 @@ $iphone-landscape-medium: (
     border-radius: 50%;
     height: 0.8em;
     width: 0.8em;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-left: 4px;
   }
 
@@ -309,7 +311,7 @@ $iphone-landscape-medium: (
   }
 
   @include grid-media($phone-small) {
-    height: 120vh;
+    height: 140vh;
 
     .icons {
       padding-bottom: 70px;
