@@ -45,6 +45,10 @@ $phone-landscape: (
   media: "screen and (min-width: 0px) and (max-width: 750px)", 
 );
 
+$phone-landscape-small: ( 
+  media: "screen and (min-width: 0px) and (max-width: 700px) and (orientation: landscape)", 
+);
+
 .nav {
   @include grid-column(12,$my-default-grid);
   float: left;
@@ -215,6 +219,26 @@ $phone-landscape: (
       right:-10%;
     }
   }
+  
+  @include grid-media($phone-landscape-small) {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 1500px !important;
+    }
+    height: 80vh;
+    padding-left: 5vw;
+    
+    .logo {
+      width:150px;
+      bottom: -28vh;
+      right:-10%;
+    }
+  }
+  
+  
 
 }
 
