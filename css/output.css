@@ -142,14 +142,14 @@ body {
         margin-left: 1vw; }
       .main .logo {
         width: 250px;
-        bottom: -48vh;
+        bottom: -55vh;
         right: -10%; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .main {
       height: 90vh; }
       .main .logo {
         width: 300px;
-        bottom: -45vh;
+        bottom: -50vh;
         right: -10%; } }
 
 .secondary {

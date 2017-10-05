@@ -258,7 +258,7 @@ $iphone-landscape-medium: (
       right:-10%;
     }
   }
-
+  //samsung s6 portrait
   @include grid-media($phone-small) {
     height: 90vh;
     padding-left: 5vw;
@@ -269,17 +269,18 @@ $iphone-landscape-medium: (
 
     .logo {
       width:250px;
-      bottom: -48vh;
+      bottom: -55vh;
       right:-10%;
     }
   }
 
+  // samsung s6
   @include grid-media($iphone-landscape) {
     height: 90vh;
 
     .logo {
       width:300px;
-      bottom: -45vh;
+      bottom: -50vh;
       right:-10%;
     }
   }
