@@ -49,6 +49,10 @@ $phone-small: (
   media: "(max-width: 340px)", 
 );
 
+$iphone-landscape: (
+  media:"screen and (min-width: 460px) and (max-width: 670px) and (orientation landscape)"
+);
+
 .nav {
   @include grid-column(12,$my-default-grid);
   float: left;
@@ -229,6 +233,10 @@ $phone-small: (
       bottom: -38vh;
       right:-10%;
     }
+  }
+  
+  @include grid-media($iphone-landscape) {
+    height: 200vh;
   }
   
   

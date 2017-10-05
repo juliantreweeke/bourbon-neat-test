@@ -136,6 +136,9 @@ body {
         width: 250px;
         bottom: -38vh;
         right: -10%; } }
+  @media screen and (min-width: 460px) and (max-width: 670px) and (orientation landscape) {
+    .main {
+      height: 200vh; } }
 
 .secondary {
   width: 100%;
