@@ -236,6 +236,10 @@ $iphone-landscape-medium: (
     height: 90vh;
     padding-left: 5vw;
     
+    .dots {
+      margin-left:1vw;
+    }
+    
     .logo {
       width:250px;
       bottom: -38vh;
@@ -282,7 +286,10 @@ $iphone-landscape-medium: (
     .icons {
       padding-bottom: 60px;
     }
-    
+  }
+  
+  @include grid-media($phone-small) {
+    height: 100vh;
   }
 }
 

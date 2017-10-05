@@ -132,6 +132,8 @@ body {
     .main {
       height: 90vh;
       padding-left: 5vw; }
+      .main .dots {
+        margin-left: 1vw; }
       .main .logo {
         width: 250px;
         bottom: -38vh;
@@ -161,6 +163,9 @@ body {
       height: 150vh; }
       .secondary .icons {
         padding-bottom: 60px; } }
+  @media (max-width: 500px) {
+    .secondary {
+      height: 100vh; } }
 
 .skew {
   width: 100%;
