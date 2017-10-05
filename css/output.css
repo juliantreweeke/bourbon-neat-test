@@ -3,7 +3,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+.logo-container {
   overflow-x: hidden; }
 
 .container {
@@ -22,22 +24,25 @@ body {
   height: 10vh;
   width: 100vw;
   margin: 0;
-  padding-left: 150px;
   text-align: center; }
   .nav #toplinks {
-    display: block; }
+    padding-left: 360px;
+    display: flex;
+    justify-content: center; }
   .nav li {
+    padding: 15px;
+    padding-right: 30px;
     display: inline;
     list-style: none; }
   .nav a {
     display: inline-block;
-    padding: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
     text-decoration: none;
-    color: #a9a9a9;
+    color: #212733;
     font-size: 13px; }
   .nav a:hover {
-    background-color: black; }
+    background-color: black;
+    color: white; }
   .nav #burger {
     display: none; }
   @media screen and (min-width: 320px) and (max-width: 850px) {
@@ -56,6 +61,7 @@ body {
       color: #a9a9a9; } }
 
 .main {
+  margin-top: 10px;
   height: 60vh;
   width: 100vh;
   padding-left: 5vw; }
@@ -68,12 +74,12 @@ body {
     right: -2%;
     bottom: -4vh; }
   .main h1 {
-    font-size: 2.7em;
-    color: #969696;
+    font-size: 2.6em;
+    color: #212733;
     font-weight: 100;
-    width: 60vw; }
+    width: 47vw; }
   .main h4 {
-    font-size: 20px;
+    font-size: 17px;
     color: #a9a9a9;
     width: 550px; }
   .main h1,
@@ -152,7 +158,7 @@ body {
   background-color: #0b4e70; }
   @media screen and (min-width: 320px) and (max-width: 850px) {
     .secondary {
-      height: 90vh; }
+      height: 120vh; }
       .secondary .icons {
         padding-top: 0px; } }
   @media screen and (min-width: 640px) and (max-width: 750px) {
@@ -167,7 +173,7 @@ body {
         padding-bottom: 60px; } }
   @media (max-width: 500px) {
     .secondary {
-      height: 100vh; }
+      height: 120vh; }
       .secondary .icons {
         padding-bottom: 70px; } }
 
@@ -220,10 +226,10 @@ body {
     display: block;
     list-style: none; }
   .show a {
-    padding: 10px;
+    padding: 5px;
     margin-top: 0;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 25px;
     transition: ease-in-out; }
   .show a:hover {
     background-color: rgba(255, 255, 255, 0) !important;

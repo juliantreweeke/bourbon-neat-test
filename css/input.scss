@@ -1,6 +1,6 @@
 @import "libraries/bourbon/bourbon.scss";
 @import "libraries/neat/neat.scss";
-$font-color1: #969696;
+$font-color1: #212733;
 $font-color2: #a9a9a9;
 $font-color3: white;
 $link-color: #75c372;
@@ -13,6 +13,12 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  // overflow-x: hidden;
+  // overflow-y: hidden;
+  // overflow:hidden;
+}
+
+.logo-container {
   overflow-x: hidden;
 }
 
@@ -22,31 +28,31 @@ body {
   height: 100vh;
 }
 
-$my-default-grid: ( 
-  columns: 12, 
-  direction: ltr, 
+$my-default-grid: (
+  columns: 12,
+  direction: ltr,
   media: "(max-width: 1100px)",
 );
 
-$column-grid: ( 
-  columns: 3, 
-  gutter:10vw, 
-  direction: ltr, 
-  media: "(max-width: 850px)", 
+$column-grid: (
+  columns: 3,
+  gutter:10vw,
+  direction: ltr,
+  media: "(max-width: 850px)",
 );
 
-$medium-grid: ( 
-  columns: 12, 
-  gutter: 20px, 
-  media: "screen and (min-width: 320px) and (max-width: 850px)", 
+$medium-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: "screen and (min-width: 320px) and (max-width: 850px)",
 );
 
-$phone-landscape: ( 
-  media: "screen and (min-width: 640px) and (max-width: 750px)", 
+$phone-landscape: (
+  media: "screen and (min-width: 640px) and (max-width: 750px)",
 );
 
-$phone-small: ( 
-  media: "(max-width: 500px)", 
+$phone-small: (
+  media: "(max-width: 500px)",
 );
 
 // $iphone-landscape-small: (
@@ -67,29 +73,36 @@ $iphone-landscape-medium: (
   height: 10vh;
   width: 100vw;
   margin: 0;
-  padding-left: 150px;
+  // padding-left: 150px;
   text-align: center;
 
   #toplinks {
-    display: block;
+    // display: block;
+    padding-left: 360px;
+    display: flex;
+    justify-content:center;
+    // margin: 0 -5px;
   }
 
   li {
+    padding:15px;
+    padding-right: 30px;
     display: inline;
     list-style: none;
   }
 
   a {
     display: inline-block;
-    padding: 15px;
-    margin-top: 20px;
+    // padding: 20px;
+    margin-top: 5px;
     text-decoration: none;
-    color: $font-color2;
+    color: $font-color1;
     font-size: 13px;
   }
 
   a:hover {
     background-color: black;
+    color:$font-color3;
   }
 
   #burger {
@@ -121,9 +134,10 @@ $iphone-landscape-medium: (
 
 .main {
   // @include grid-column(6,$my-default-grid);
+  margin-top: 10px;
   height: 60vh;
   width: 100vh;
-  
+
   .logo {
     height:105vh;
     width:45%;
@@ -135,14 +149,15 @@ $iphone-landscape-medium: (
   }
 
   h1 {
-    font-size: 2.7em;
+
+    font-size: 2.6em;
     color: $font-color1;
     font-weight: 100;
-    width: 60vw;
+    width: 47vw;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 17px;
     color: $font-color2;
     width: 550px;
   }
@@ -205,14 +220,14 @@ $iphone-landscape-medium: (
       font-size: 15px !important;
       width: 200px;
     }
-    
+
     .logo {
       bottom: -12vh;
     }
-    
+
     height: 65vh;
     padding-left: 5vw;
-    
+
   }
   @include grid-media($phone-landscape) {
     h1 {
@@ -224,40 +239,40 @@ $iphone-landscape-medium: (
     }
     height: 80vh;
     padding-left: 5vw;
-    
+
     .logo {
       width:350px;
       bottom: -28vh;
       right:-10%;
     }
   }
-  
+
   @include grid-media($phone-small) {
     height: 90vh;
     padding-left: 5vw;
-    
+
     .dots {
       margin-left:1vw;
     }
-    
+
     .logo {
       width:250px;
       bottom: -38vh;
       right:-10%;
     }
   }
-  
+
   @include grid-media($iphone-landscape) {
     height: 90vh;
-    
+
     .logo {
       width:300px;
       bottom: -38vh;
       right:-10%;
     }
   }
-  
-  
+
+
 
 }
 
@@ -270,12 +285,12 @@ $iphone-landscape-medium: (
   background-color: $main-color;
   // responsive bourbon queries
   @include grid-media($medium-grid) {
-    height: 90vh;
-    
+    height: 120vh;
+
     .icons {
       padding-top: 0px;
     }
-    
+
   }
   @include grid-media($phone-landscape) {
     height: 170vh;
@@ -284,18 +299,18 @@ $iphone-landscape-medium: (
       padding-top: 60px;
     }
   }
-  
+
   @include grid-media($iphone-landscape) {
     height: 150vh;
-    
+
     .icons {
       padding-bottom: 60px;
     }
   }
-  
+
   @include grid-media($phone-small) {
-    height: 100vh;
-    
+    height: 120vh;
+
     .icons {
       padding-bottom: 70px;
     }
@@ -342,7 +357,7 @@ $iphone-landscape-medium: (
   background-color: black;
   padding: 0px;
 }
-// nav draw 
+// nav draw
 .show {
   z-index: 1;
   height: 450px;
@@ -359,10 +374,10 @@ $iphone-landscape-medium: (
   }
 
   a {
-    padding: 10px;
+    padding: 5px;
     margin-top: 0;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 25px;
     transition: ease-in-out;
   }
 
@@ -378,24 +393,22 @@ $iphone-landscape-medium: (
       padding: 5px;
     }
   }
-  
+
   @include grid-media($phone-small) {
     a {
       font-size: 25px;
     }
   }
-  
+
   @include grid-media($iphone-landscape) {
     a {
       font-size: 15px;
     }
   }
-  
+
   @include grid-media($iphone-landscape-medium) {
     a {
       font-size: 20px;
     }
   }
 }
-
-
