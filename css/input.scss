@@ -290,6 +290,10 @@ $iphone-landscape-medium: (
   
   @include grid-media($phone-small) {
     height: 100vh;
+    
+    .icons {
+      padding-bottom: 70px;
+    }
   }
 }
 
