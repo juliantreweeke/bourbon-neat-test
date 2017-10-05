@@ -50,11 +50,11 @@ $phone-landscape: (
 );
 
 $phone-small: ( 
-  media: "(max-width: 340px)", 
+  media: "(max-width: 500px)", 
 );
 
 $iphone-landscape: (
-  media:"screen and (max-width: 640px) and (orientation: landscape)"
+  media:"screen and (max-width: 650px) and (orientation: landscape)"
 );
 
 .nav {
@@ -360,7 +360,7 @@ $iphone-landscape: (
   
   @include grid-media($phone-small) {
     a {
-      font-size: 35px;
+      font-size: 25px;
     }
   }
   

@@ -128,7 +128,7 @@ body {
         width: 350px;
         bottom: -28vh;
         right: -10%; } }
-  @media (max-width: 340px) {
+  @media (max-width: 500px) {
     .main {
       height: 90vh;
       padding-left: 5vw; }
@@ -136,7 +136,7 @@ body {
         width: 250px;
         bottom: -38vh;
         right: -10%; } }
-  @media screen and (max-width: 640px) and (orientation: landscape) {
+  @media screen and (max-width: 650px) and (orientation: landscape) {
     .main {
       height: 90vh; }
       .main .logo {
@@ -156,7 +156,7 @@ body {
       height: 170vh; }
       .secondary .icons {
         padding-top: 60px; } }
-  @media screen and (max-width: 640px) and (orientation: landscape) {
+  @media screen and (max-width: 650px) and (orientation: landscape) {
     .secondary {
       height: 150vh; }
       .secondary .icons {
@@ -225,10 +225,10 @@ body {
       .show a {
         font-size: 28px;
         padding: 5px; } }
-  @media (max-width: 340px) {
+  @media (max-width: 500px) {
     .show a {
-      font-size: 35px; } }
-  @media screen and (max-width: 640px) and (orientation: landscape) {
+      font-size: 25px; } }
+  @media screen and (max-width: 650px) and (orientation: landscape) {
     .show a {
       font-size: 15px; } }
 
