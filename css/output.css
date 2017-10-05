@@ -149,7 +149,7 @@ body {
       height: 90vh; }
       .main .logo {
         width: 300px;
-        bottom: -50vh;
+        bottom: -55vh;
         right: -10%; } }
 
 .secondary {
@@ -168,7 +168,7 @@ body {
         padding-top: 60px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .secondary {
-      height: 190vh; }
+      height: 210vh; }
       .secondary .icons {
         padding-bottom: 60px; } }
   @media (max-width: 500px) {
