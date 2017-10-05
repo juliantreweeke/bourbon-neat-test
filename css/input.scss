@@ -15,9 +15,6 @@ body {
   padding: 0;
   overflow-x:hidden;
 
-  // overflow-x: hidden;
-  // overflow-y: hidden;
-  // overflow:hidden;
 }
 
 // .logo-container {
@@ -403,7 +400,7 @@ $iphone-landscape-medium: (
 
   @include grid-media($phone-small) {
     a {
-      font-size: 25px;
+      font-size: 22px;
     }
   }
 
