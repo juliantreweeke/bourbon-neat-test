@@ -7,12 +7,14 @@ $("#burger").click(function() {
 // If window is more then 850 then put page out of mobile mode and back to default
 $(window).resize(function() {
   if ($(window).width() > 850) {
+    $('body').css('overflowY', 'hidden');
     $(".main-container").fadeIn();
     $("#toplinks").removeClass("show").fadeIn();
   }
 
   // If window is less then 850 and toplinks does not have the show class, then hide it.
   if ($(window).width() < 850) {
+    $('body').css('overflowY', 'auto');
     if (!$("#toplinks").hasClass("show")) {
       $("#toplinks").css("display", "none");
     }
