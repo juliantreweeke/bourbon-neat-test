@@ -6,6 +6,9 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden; }
+  @media screen and (min-width: 320px) and (max-width: 850px) {
+    body {
+      overflow-y: auto; } }
 
 .container {
   width: 100vw;
@@ -67,12 +70,12 @@ body {
   .main .logo {
     display: block;
     height: 105vh;
-    width: 45%;
+    width: 50%;
     z-index: -4;
     transform: rotate(40deg);
     position: absolute;
     right: -2%;
-    bottom: -9vh; }
+    top: 7vh; }
   .main h1 {
     font-size: 2.6em;
     color: #212733;
@@ -149,14 +152,26 @@ body {
         right: -10%; } }
   @media (max-width: 500px) {
     .main {
-      height: 90vh;
-      padding-left: 5vw; }
+      height: 50vh;
+      padding-left: 10vw;
+      text-align: center; }
       .main .dots {
         margin-left: 1vw; }
       .main .logo {
-        width: 250px;
-        bottom: -55vh;
-        right: -10%; } }
+        width: 300px;
+        top: -50px;
+        right: -10%; }
+      .main h1 {
+        font-size: 2.5em;
+        color: #212733;
+        font-weight: 100;
+        width: 47vw;
+        line-height: 50px; }
+      .main h4 {
+        font-size: 1.3em !important;
+        color: #a9a9a9; }
+      .main h1, .main h4 {
+        padding-left: 60px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .main {
       height: 90vh; }
@@ -186,9 +201,18 @@ body {
         padding-bottom: 60px; } }
   @media (max-width: 500px) {
     .secondary {
-      height: 150vh; }
-      .secondary .icons {
-        padding-bottom: 70px; } }
+      height: 100vh; }
+      .secondary .icons :first-child {
+        padding-top: 50px; }
+      .secondary a {
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 25px; }
+      .secondary p {
+        font-size: 20px;
+        padding-bottom: 25px; } }
 
 .skew {
   width: 100%;
@@ -227,22 +251,24 @@ body {
   padding: 0px; }
 
 .show {
+  background-color: #0b4e70;
   z-index: 1;
-  height: 450px;
+  height: 52vh;
   width: 100%;
   position: absolute;
   top: 0;
   right: 0;
   padding: 0;
-  margin-top: 10px; }
+  margin-top: 5px; }
   .show li {
     display: block;
     list-style: none; }
   .show a {
     margin-top: 0;
     text-decoration: none;
-    font-size: 25px;
-    transition: ease-in-out; }
+    font-size: 20px;
+    transition: ease-in-out;
+    color: white; }
   .show a:hover {
     background-color: rgba(255, 255, 255, 0) !important;
     color: #75c372; }
@@ -254,7 +280,8 @@ body {
         padding: 5px; } }
   @media (max-width: 500px) {
     .show a {
-      font-size: 22px; } }
+      font-size: 40px;
+      padding: 40px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .show a {
       font-size: 30px; } }
