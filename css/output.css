@@ -159,7 +159,7 @@ body {
         margin-left: 1vw; }
       .main .logo {
         width: 300px;
-        top: 190px;
+        top: 30vh;
         right: -10%; }
       .main h1 {
         font-size: 2.2em;
@@ -172,7 +172,7 @@ body {
         color: #a9a9a9;
         width: 70vw; }
       .main h1, .main h4 {
-        padding-left: 30px; } }
+        padding-left: 20px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .main {
       height: 90vh; }
