@@ -129,7 +129,7 @@ body {
         width: 350px; } }
   @media screen and (min-width: 320px) and (max-width: 850px) {
     .main {
-      height: 65vh;
+      height: 60vh;
       padding-left: 5vw; }
       .main h1 {
         font-size: 1.8em; }
@@ -138,18 +138,6 @@ body {
         width: 200px; }
       .main .logo {
         bottom: -15vh; } }
-  @media screen and (min-width: 640px) and (max-width: 750px) {
-    .main {
-      height: 80vh;
-      padding-left: 5vw; }
-      .main h1 {
-        font-size: 1.5em; }
-      .main h4 {
-        font-size: 15px !important; }
-      .main .logo {
-        width: 350px;
-        bottom: -30vh;
-        right: -10%; } }
   @media (max-width: 500px) {
     .main {
       height: 60vh;

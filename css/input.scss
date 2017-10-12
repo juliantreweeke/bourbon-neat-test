@@ -250,27 +250,28 @@ body {
       bottom: -15vh;
     }
 
-    height: 65vh;
+    height: 60vh;
     padding-left: 5vw;
 
   }
-  @include grid-media($phone-landscape) {
-    h1 {
-      font-size: 1.5em;
-    }
 
-    h4 {
-      font-size: 15px !important;
-    }
-    height: 80vh;
-    padding-left: 5vw;
-
-    .logo {
-      width:350px;
-      bottom: -30vh;
-      right:-10%;
-    }
-  }
+  // @include grid-media($phone-landscape) {
+  //   h1 {
+  //     font-size: 1.5em;
+  //   }
+  //
+  //   h4 {
+  //     font-size: 15px !important;
+  //   }
+  //   height: 80vh;
+  //   padding-left: 5vw;
+  //
+  //   .logo {
+  //     width:350px;
+  //     bottom: -30vh;
+  //     right:-10%;
+  //   }
+  // }
   //samsung s6 portrait
   @include grid-media($phone-small) {
     height: 60vh;
