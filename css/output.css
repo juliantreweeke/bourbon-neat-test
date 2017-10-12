@@ -152,24 +152,25 @@ body {
         right: -10%; } }
   @media (max-width: 500px) {
     .main {
-      height: 50vh;
+      height: 70vh;
       padding-left: 10vw;
       text-align: center; }
       .main .dots {
         margin-left: 1vw; }
       .main .logo {
         width: 300px;
-        top: -50px;
+        top: 140px;
         right: -10%; }
       .main h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
         color: #212733;
         font-weight: 100;
-        width: 47vw;
-        line-height: 50px; }
+        width: 60vw;
+        line-height: 45px; }
       .main h4 {
         font-size: 1.3em !important;
-        color: #a9a9a9; }
+        color: #a9a9a9;
+        width: 60vw; }
       .main h1, .main h4 {
         padding-left: 60px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
@@ -201,9 +202,9 @@ body {
         padding-bottom: 60px; } }
   @media (max-width: 500px) {
     .secondary {
-      height: 100vh; }
-      .secondary .icons :first-child {
-        padding-top: 50px; }
+      height: 120vh; }
+      .secondary .icons {
+        padding-top: 55px; }
       .secondary a {
         border-style: solid;
         border-width: 1px 1px 1px 1px;
@@ -253,7 +254,7 @@ body {
 .show {
   background-color: #0b4e70;
   z-index: 1;
-  height: 52vh;
+  height: 80vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -280,8 +281,8 @@ body {
         padding: 5px; } }
   @media (max-width: 500px) {
     .show a {
-      font-size: 40px;
-      padding: 40px; } }
+      font-size: 30px;
+      padding: 20px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .show a {
       font-size: 30px; } }
