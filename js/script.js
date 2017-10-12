@@ -1,14 +1,18 @@
 // On burger click,open nav draw and fade out any other text.
 $("#burger").click(function() {
+
   $("#toplinks").addClass("show");
   // $("#toplinks").toggleClass("hidden");
   if( $("#toplinks").css('display').toLowerCase() == 'none') {
 
-  $("#toplinks").css("display", "block");
-  // $(".show").css("display", "block");
+  // $("#toplinks").css("display", "block");
+  // $("#toplinks").css("display", "block");
+  $("#toplinks").css("display", "block").animate({"margin-right": '-=500'});
 
+  // $(".show").css("display", "block");
   } else {
-  $("#toplinks").css("display", "none");
+  $("#toplinks").animate({"margin-right": '+=500'}).css("display", "none");
+  // $("#toplinks").css("display", "none").animate({"margin-right": '+=500'});;
   }
 
   // $("#toplinks").css("display", "block");
@@ -30,6 +34,7 @@ $(window).resize(function() {
   if ($(window).width() > 850) {
     $(".main-container").fadeIn();
     $("#toplinks").removeClass("show").fadeIn();
+    $(".show").css("margin-right","500px");
   }
 
   // If window is less then 850 and toplinks does not have the show class, then hide it.
