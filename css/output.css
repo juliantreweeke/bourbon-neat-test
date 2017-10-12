@@ -152,7 +152,7 @@ body {
         right: -10%; } }
   @media (max-width: 500px) {
     .main {
-      height: 80vh;
+      height: 60vh;
       padding-left: 10vw;
       text-align: center; }
       .main .dots {
