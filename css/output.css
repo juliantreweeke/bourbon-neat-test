@@ -254,7 +254,7 @@ body {
 .show {
   background-color: #0b4e70;
   z-index: 1;
-  height: 90vh;
+  height: 65vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -282,8 +282,8 @@ body {
         padding: 5px; } }
   @media (max-width: 500px) {
     .show a {
-      font-size: 30px;
-      padding: 20px; } }
+      font-size: 25px;
+      padding: 5px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .show a {
       font-size: 30px; } }
