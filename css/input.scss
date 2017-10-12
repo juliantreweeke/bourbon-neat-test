@@ -273,7 +273,7 @@ body {
   }
   //samsung s6 portrait
   @include grid-media($phone-small) {
-    height: 70vh;
+    height: 80vh;
     padding-left: 10vw;
     text-align: center;
 
@@ -283,7 +283,7 @@ body {
 
     .logo {
       width:300px;
-      top:140px;
+      top:180px;
       // bottom: 100vh;
       right:-10%;
     }
@@ -292,19 +292,19 @@ body {
       font-size: 2.2em;
       color: $font-color1;
       font-weight: 100;
-      width: 60vw;
+      width: 70vw;
       line-height: 45px;
     }
 
     h4 {
       font-size: 1.3em !important;
       color: $font-color2;
-      width: 60vw;
+      width: 70vw;
       // width: px;
     }
 
     h1,h4 {
-      padding-left: 60px;
+      padding-left: 40px;
     }
   }
 
@@ -352,7 +352,7 @@ body {
   }
 
   @include grid-media($phone-small) {
-    height: 120vh;
+    height: 130vh;
 
     // .icons :first-child {
     //   padding-top:25px;
@@ -424,7 +424,7 @@ body {
 
   z-index: 1;
   // height: 450px;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -440,16 +440,19 @@ body {
   li {
     display: block;
     list-style: none;
+    padding-top: 20px;
   }
 
   a {
-    // padding: 5px;
-    margin-top: 0;
+    // padding: 55px;
+    margin-top: 10px;
     text-decoration: none;
     font-size: 20px;
     transition: ease-in-out;
     color:white;
   }
+
+
 
   a:hover {
     background-color: transparentize(white, 1) !important;

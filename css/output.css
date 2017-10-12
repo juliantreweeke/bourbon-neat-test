@@ -152,27 +152,27 @@ body {
         right: -10%; } }
   @media (max-width: 500px) {
     .main {
-      height: 70vh;
+      height: 80vh;
       padding-left: 10vw;
       text-align: center; }
       .main .dots {
         margin-left: 1vw; }
       .main .logo {
         width: 300px;
-        top: 140px;
+        top: 180px;
         right: -10%; }
       .main h1 {
         font-size: 2.2em;
         color: #212733;
         font-weight: 100;
-        width: 60vw;
+        width: 70vw;
         line-height: 45px; }
       .main h4 {
         font-size: 1.3em !important;
         color: #a9a9a9;
-        width: 60vw; }
+        width: 70vw; }
       .main h1, .main h4 {
-        padding-left: 60px; } }
+        padding-left: 40px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .main {
       height: 90vh; }
@@ -202,7 +202,7 @@ body {
         padding-bottom: 60px; } }
   @media (max-width: 500px) {
     .secondary {
-      height: 120vh; }
+      height: 130vh; }
       .secondary .icons {
         padding-top: 55px; }
       .secondary a {
@@ -254,7 +254,7 @@ body {
 .show {
   background-color: #0b4e70;
   z-index: 1;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -263,9 +263,10 @@ body {
   margin-top: 5px; }
   .show li {
     display: block;
-    list-style: none; }
+    list-style: none;
+    padding-top: 20px; }
   .show a {
-    margin-top: 0;
+    margin-top: 10px;
     text-decoration: none;
     font-size: 20px;
     transition: ease-in-out;
