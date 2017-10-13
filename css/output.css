@@ -287,7 +287,7 @@ body {
     .show a {
       font-size: 20px; } }
 
-.fa-times-thin:before {
+.fa-close-thin:before {
   content: '\00d7';
   color: #a9a9a9; }
 

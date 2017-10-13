@@ -6,10 +6,11 @@ $("#burger").click(function() {
 
   if (!$(".show").hasClass("active")) {
     $(".show").css("display", "block").animate({"margin-right": '0%'}).addClass("active");
-    $(this).find($(".fa")).removeClass('fa-bars').addClass('fa-close');
+
+    $(this).find($(".fa")).removeClass('fa-bars').addClass('fa-close-thin');
   } else {
     $(".show").animate({"margin-right": '+=100%'}).removeClass("active");
-    $(this).find($(".fa")).removeClass('fa-close').addClass('fa-bars');
+    $(this).find($(".fa")).removeClass('fa-close-thin').addClass('fa-bars');
   }
 
 });
@@ -20,7 +21,7 @@ $(window).resize(function() {
     $(".main-container").fadeIn();
     $(".show").removeClass("active");
     $("#toplinks").removeClass("show").fadeIn();
-    $("#burger").find($(".fa")).removeClass('fa-times-thin').addClass('fa-bars');
+    $("#burger").find($(".fa")).removeClass('fa-close-thin').addClass('fa-bars');
   }
 
   // If window is less then 850 and toplinks does not have the show class, then hide it.

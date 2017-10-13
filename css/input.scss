@@ -476,8 +476,8 @@ body {
 }
 
 
-// cross icon
-.fa-times-thin:before {
+// font awesome cross icon made thin with web hack..
+.fa-close-thin:before {
 	content: '\00d7';
   color: $font-color2;
 }
