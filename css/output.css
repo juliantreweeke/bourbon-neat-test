@@ -59,7 +59,7 @@ body {
       right: 0;
       padding: 15px;
       cursor: pointer; }
-    .nav .fa-bars {
+    .nav .fa-bars, .nav .fa-close {
       color: #a9a9a9; } }
 
 .main {
@@ -240,10 +240,11 @@ body {
   padding: 0px; }
 
 .show {
-  margin-right: 500px;
+  display: block;
+  margin-right: 100%;
   background-color: #0b4e70;
   z-index: 1;
-  height: 55vh;
+  height: 60vh;
   width: 100vw;
   position: absolute;
   top: 0;
@@ -255,11 +256,14 @@ body {
     list-style: none;
     padding-top: 20px; }
   .show a {
+    padding: 15px;
     margin-top: 10px;
     text-decoration: none;
-    font-size: 20px;
-    transition: ease-in-out;
+    font-size: 25px;
+    color: #75c372;
     color: white; }
+  .show li:first-child a {
+    padding-top: 30px; }
   .show a:hover {
     background-color: rgba(255, 255, 255, 0) !important;
     color: #75c372; }
@@ -271,13 +275,19 @@ body {
         padding: 5px; } }
   @media (max-width: 500px) {
     .show a {
-      font-size: 25px;
-      padding: 5px; } }
+      font-size: 30px;
+      padding: 5px; }
+    .show li:first-child a {
+      padding-top: 30px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .show a {
       font-size: 30px; } }
   @media screen and (min-width: 670px) and (max-width: 700px) and (orientation: landscape) {
     .show a {
       font-size: 20px; } }
+
+.fa-times-thin:before {
+  content: '\00d7';
+  color: #a9a9a9; }
 
 /*# sourceMappingURL=output.css.map */

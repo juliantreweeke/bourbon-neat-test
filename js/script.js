@@ -1,31 +1,16 @@
-// On burger click,open nav draw and fade out any other text.
+// On burger click, slide open nav draw.
+
 $("#burger").click(function() {
 
-  $("#toplinks").addClass("show");
-  // $("#toplinks").toggleClass("hidden");
-  if( $("#toplinks").css('display').toLowerCase() == 'none') {
+  $("#toplinks").addClass("show").css("display", "block");
 
-  // $("#toplinks").css("display", "block");
-  // $("#toplinks").css("display", "block");
-  $("#toplinks").css("display", "block").animate({"margin-right": '-=500'});
-
-  // $(".show").css("display", "block");
+  if (!$(".show").hasClass("active")) {
+    $(".show").css("display", "block").animate({"margin-right": '0%'}).addClass("active");
+    $(this).find($(".fa")).removeClass('fa-bars').addClass('fa-close');
   } else {
-  $("#toplinks").animate({"margin-right": '+=500'}).css("display", "none");
-  // $("#toplinks").css("display", "none").animate({"margin-right": '+=500'});;
+    $(".show").animate({"margin-right": '+=100%'}).removeClass("active");
+    $(this).find($(".fa")).removeClass('fa-times-thin').addClass('fa-bars');
   }
-
-  // $("#toplinks").css("display", "block");
-
-  // $("#toplinks").fadeToggle().addClass("show").toggleClass("hidden");
-  // $( "#toplinks" ).fadeToggle().slideDown( "slow", function() {
-  //   $(this).addClass("show");
-  // });
-
-  // $(".main-container").fadeToggle();
-
-  // $("nav").addClass("nav-background");
-
 
 });
 
@@ -33,16 +18,17 @@ $("#burger").click(function() {
 $(window).resize(function() {
   if ($(window).width() > 850) {
     $(".main-container").fadeIn();
+    $(".show").removeClass("active");
     $("#toplinks").removeClass("show").fadeIn();
-    $(".show").css("margin-right","500px");
+    $("#burger").find($(".fa")).removeClass('fa-times-thin').addClass('fa-bars');
   }
 
   // If window is less then 850 and toplinks does not have the show class, then hide it.
   if ($(window).width() < 850) {
+
     if (!$("#toplinks").hasClass("show")) {
 
       $("#toplinks").css("display", "none");
-      // $("#toplinks").toggleClass("hidden");
     }
   }
 

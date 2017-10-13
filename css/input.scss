@@ -126,7 +126,7 @@ body {
       cursor: pointer;
     }
     // fa-bars is for burger color
-    .fa-bars {
+    .fa-bars,.fa-close {
       color: $font-color2;
     }
   }
@@ -255,24 +255,6 @@ body {
 
   }
 
-  // @include grid-media($phone-landscape) {
-  //   h1 {
-  //     font-size: 1.5em;
-  //   }
-  //
-  //   h4 {
-  //     font-size: 15px !important;
-  //   }
-  //   height: 80vh;
-  //   padding-left: 5vw;
-  //
-  //   .logo {
-  //     width:350px;
-  //     bottom: -30vh;
-  //     right:-10%;
-  //   }
-  // }
-  //samsung s6 portrait
   @include grid-media($phone-small) {
     height: 60vh;
     // height: 50% !important;
@@ -357,10 +339,6 @@ body {
   @include grid-media($phone-small) {
     height: 130vh;
 
-    // .icons :first-child {
-    //   padding-top:25px;
-    // }
-
     .icons {
       padding-top:55px;
     }
@@ -423,23 +401,17 @@ body {
 }
 // nav draw
 .show {
-  margin-right: 500px;
+  display: block;
+  margin-right: 100%;
   background-color: rgba(11, 78, 112, 1);
-
   z-index: 1;
-  // height: 450px;
-  height: 55vh;
+  height: 60vh;
   width: 100vw;
   position: absolute;
   top: 0;
   right: 0;
   padding: 0;
   margin-top: 5px;
-  // transition:all 2s ease;
-  // transform: translateX(0%);
-  // left:-100px;
-  // transition: 1s;
-
 
   li {
     display: block;
@@ -448,13 +420,17 @@ body {
   }
 
   a {
-    // padding: 55px;
+    padding:15px;
     margin-top: 10px;
     text-decoration: none;
-    font-size: 20px;
-    transition: ease-in-out;
+    font-size: 25px;
+
+    color: $link-color;
     color:white;
-    // border-bottom: 2px solid black;
+  }
+
+  li:first-child a {
+    padding-top:30px;
   }
 
 
@@ -474,8 +450,12 @@ body {
 
   @include grid-media($phone-small) {
     a {
-      font-size: 25px;
+      font-size: 30px;
       padding:5px;
+    }
+
+    li:first-child a {
+      padding-top:30px;
     }
 
 
@@ -494,12 +474,9 @@ body {
   }
 }
 
-// .hidden {
-//   display:none;
-// }
 
-// .line {
-//   width: 100vw;
-//   height:1px;
-//   background: black;
-// }
+// cross icon
+.fa-times-thin:before {
+	content: '\00d7';
+  color: $font-color2;
+}
