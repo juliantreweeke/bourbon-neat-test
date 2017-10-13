@@ -58,9 +58,8 @@ body {
       position: absolute;
       right: 0;
       padding: 15px;
-      cursor: pointer; }
-    .nav .fa-bars, .nav .fa-close {
-      color: #a9a9a9; } }
+      cursor: pointer;
+      width: 100px; } }
 
 .main {
   margin-top: 30px;
@@ -273,7 +272,7 @@ body {
       padding: 12px;
       margin-left: 30px; }
     .show li:first-child a {
-      padding-top: 30px; } }
+      padding-top: 12px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .show a {
       font-size: 30px; } }
@@ -281,8 +280,30 @@ body {
     .show a {
       font-size: 20px; } }
 
-.fa-close-thin:before {
-  content: '\00d7';
-  color: #a9a9a9; }
+#burger-lines {
+  cursor: pointer;
+  display: block; }
+
+#burger-lines span {
+  background: #a9a9a9;
+  display: block;
+  width: 45px;
+  height: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  transition: all ease-in-out 0.4s; }
+
+#burger.open span:nth-child(2) {
+  width: 0;
+  opacity: 0; }
+
+#burger.open span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 15px; }
+
+#burger.open span:nth-child(3) {
+  transform: rotate(45deg);
+  top: -15px; }
 
 /*# sourceMappingURL=output.css.map */

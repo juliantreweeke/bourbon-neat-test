@@ -124,10 +124,7 @@ body {
       right: 0;
       padding: 15px;
       cursor: pointer;
-    }
-    // fa-bars is for burger color
-    .fa-bars,.fa-close {
-      color: $font-color2;
+      width:100px;
     }
   }
 };
@@ -257,7 +254,6 @@ body {
 
   @include grid-media($phone-small) {
     height: 60vh;
-    // height: 50% !important;
     padding-left: 10vw;
     text-align: center;
 
@@ -268,8 +264,6 @@ body {
     .logo {
       width:270px;
       top: 10vh;
-      // top:190px;
-      // bottom: 10vh;
       right:-10%;
     }
 
@@ -432,8 +426,6 @@ body {
     padding-top:30px;
   }
 
-
-
   a:hover {
     background-color: transparentize(white, 1) !important;
     color: $link-color;
@@ -447,7 +439,7 @@ body {
     }
 
     li:first-child a {
-      padding-top:30px;
+      padding-top:12px;
     }
 
 
@@ -466,9 +458,35 @@ body {
   }
 }
 
+// animate the burger into a cross on click
 
-// font awesome cross icon made thin with web hack..
-.fa-close-thin:before {
-	content: '\00d7';
-  color: $font-color2;
+#burger-lines {
+  cursor:pointer;
+  display:block;
+}
+
+#burger-lines span {
+  background: $font-color2;
+  display: block;
+  width:45px;
+  height:5px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+#burger.open span:nth-child(2){
+  width:0;
+  opacity:0;
+}
+
+#burger.open span:nth-child(1){
+  transform: rotate(-45deg);
+  top:15px;
+}
+
+#burger.open span:nth-child(3){
+  transform: rotate(45deg);
+  top:-15px;
 }
