@@ -307,7 +307,6 @@ body {
 // blue div section
 
 .secondary {
-  // width: 100%;
   width: 100vw;
   height: 230px;
   background-color: $main-color;
@@ -316,7 +315,7 @@ body {
     height: 120vh;
 
     .icons {
-      padding-top: 0px;
+      padding-top: 60px;
     }
   }
 
@@ -438,14 +437,6 @@ body {
   a:hover {
     background-color: transparentize(white, 1) !important;
     color: $link-color;
-  }
-  @include grid-media($phone-landscape) {
-    height: 550px;
-
-    a {
-      font-size: 28px;
-      padding: 5px;
-    }
   }
 
   @include grid-media($phone-small) {

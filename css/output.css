@@ -177,7 +177,7 @@ body {
     .secondary {
       height: 120vh; }
       .secondary .icons {
-        padding-top: 0px; } }
+        padding-top: 60px; } }
   @media screen and (min-width: 640px) and (max-width: 750px) {
     .secondary {
       height: 180vh; }
@@ -267,12 +267,6 @@ body {
   .show a:hover {
     background-color: rgba(255, 255, 255, 0) !important;
     color: #75c372; }
-  @media screen and (min-width: 640px) and (max-width: 750px) {
-    .show {
-      height: 550px; }
-      .show a {
-        font-size: 28px;
-        padding: 5px; } }
   @media (max-width: 500px) {
     .show a {
       font-size: 30px;
