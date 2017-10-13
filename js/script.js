@@ -9,7 +9,7 @@ $("#burger").click(function() {
     $(this).find($(".fa")).removeClass('fa-bars').addClass('fa-close');
   } else {
     $(".show").animate({"margin-right": '+=100%'}).removeClass("active");
-    $(this).find($(".fa")).removeClass('fa-times-thin').addClass('fa-bars');
+    $(this).find($(".fa")).removeClass('fa-close').addClass('fa-bars');
   }
 
 });
