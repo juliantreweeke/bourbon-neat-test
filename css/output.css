@@ -268,12 +268,14 @@ body {
     background-color: rgba(255, 255, 255, 0) !important;
     color: #75c372; }
   @media (max-width: 500px) {
-    .show a {
-      font-size: 25px;
-      padding: 12px;
-      margin-left: 30px; }
-    .show li:first-child a {
-      padding-top: 12px; } }
+    .show {
+      height: 75vh; }
+      .show a {
+        font-size: 3.5vh;
+        padding: 1vh;
+        margin-left: 30px; }
+      .show li:first-child a {
+        padding-top: 12px; } }
   @media screen and (min-width: 350px) and (max-width: 670px) and (orientation: landscape) {
     .show a {
       font-size: 30px; } }

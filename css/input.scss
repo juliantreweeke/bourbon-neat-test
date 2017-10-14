@@ -434,14 +434,17 @@ body {
 
   @include grid-media($phone-small) {
     a {
-      font-size: 25px;
-      padding:12px;
+      font-size: 3.5vh;
+      // padding:7px;
+      padding:1vh;
       margin-left:30px;
     }
 
     li:first-child a {
       padding-top:12px;
     }
+
+    height: 75vh;
 
 
 
