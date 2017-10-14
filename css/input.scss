@@ -253,30 +253,31 @@ body {
   }
 
   @include grid-media($phone-small) {
-    height: 60vh;
+    height: 65vh;
     padding-left: 10vw;
     text-align: center;
 
     .dots {
       margin-left:1vw;
+      top:40vh;
     }
 
     .logo {
-      width:270px;
-      top: 10vh;
+      width:60vw;
+      top: 15vh;
       right:-10%;
     }
 
     h1 {
-      font-size: 2.2em;
+      font-size: 4vh;
       color: $font-color1;
       font-weight: 100;
       width: 70vw;
-      line-height: 45px;
+      line-height: 30px;
     }
 
     h4 {
-      font-size: 1.3em !important;
+      font-size: 2.5vh !important;
       color: $font-color2;
       width: 70vw;
       // width: px;
@@ -302,7 +303,7 @@ body {
 
 .secondary {
   width: 100vw;
-  height: 230px;
+  height: 32vh;
   background-color: $main-color;
   // responsive bourbon queries
   @include grid-media($medium-grid) {
@@ -345,7 +346,7 @@ body {
     }
 
     p {
-      font-size:20px;
+      font-size:2.5vh;
       padding-bottom: 25px;
     }
   }
@@ -398,7 +399,7 @@ body {
   margin-right: 100%;
   background-color: rgba(11, 78, 112, 1);
   z-index: 1;
-  height: 67vh;
+  height: 70vh;
   width: 100vw;
   position: absolute;
   top: 0;
@@ -433,7 +434,7 @@ body {
 
   @include grid-media($phone-small) {
     a {
-      font-size: 35px;
+      font-size: 25px;
       padding:12px;
       margin-left:30px;
     }
@@ -441,6 +442,8 @@ body {
     li:first-child a {
       padding-top:12px;
     }
+
+
 
 
   }
